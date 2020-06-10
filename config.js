@@ -3,6 +3,7 @@ module.exports = {
   manifestName: 'UofT Emergency Foodbank',
   manifestShortName: 'Foodbank', // max 12 characters
   manifestStartUrl: '/',
+  pathPrefix: `/uoft-emergency-foodbank/`, // This path is subpath of your hosting https://domain/portfolio
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
