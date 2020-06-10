@@ -27,24 +27,32 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-962f24515ff6fe9793ea.js"
+    "url": "webpack-runtime-d29b6e8f469397a76e85.js"
   },
   {
     "url": "framework-d54fcf3f0204b459cf2d.js"
   },
   {
-    "url": "app-b5fc3ade0284980272a8.js"
+    "url": "app-f6e4738c0db048872a79.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c48964301414dc063fe00d6d8a730d38"
+    "revision": "3913d8950ccfffcbd396e04ccc1b823d"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-c25716df4fbb2532700a.js"
   },
   {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "43232b01cc861c0701a3ece4bd67720b"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "183d670ad9dce9c0b900eb8db3095735"
+  },
+  {
     "url": "manifest.webmanifest",
-    "revision": "e7d3ee2cd1e72dbc00fe1f210fa71629"
+    "revision": "2a0ff00e331e009820ca44288e896813"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -132,12 +140,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/uoft-emergency-foodbank`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-b5fc3ade0284980272a8.js`))) {
+  if (!resources || !(await caches.match(`/uoft-emergency-foodbank/app-f6e4738c0db048872a79.js`))) {
     return await fetch(event.request)
   }
 
@@ -150,7 +158,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/uoft-emergency-foodbank/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
