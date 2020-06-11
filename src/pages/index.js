@@ -31,7 +31,7 @@ const IndexPage = () => (
             <header className="major">
               <h2>A Contactless Foodbank for Students</h2>
               <p>
-                <a href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">Register to receive a free box of food</a>.
+                <a target="_blank" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">Register to receive a free box of food</a>.
               </p>
             </header>
             <p>
@@ -49,7 +49,7 @@ const IndexPage = () => (
             <h3>How It Works</h3>
             <ul className="feature-icons">
               <li className="fa-user-plus">
-                <a href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
+                <a target="_blank" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
                   Register &nbsp; 
                   </a>
                    for a box of food by providing us with your information. 
@@ -59,7 +59,7 @@ const IndexPage = () => (
             </ul>
             <p>
               Every week students can register to receive a &nbsp;
-              <a href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
+              <a target="_blank" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
               &nbsp;containing fresh produce. Each box feeds 2-4 people and students can continously register
               for as long as they need food. Information is provided to FoodShare by our volunteers
               in order to faciliate ordering and shipping. 
@@ -75,7 +75,7 @@ const IndexPage = () => (
             </p>
             <div className="features">
               <article>
-                <a href="/#" className="image">
+                <a target="_blank" href="https://utoronto.ewb.ca/en/" className="image">
                   <img src={ewb} alt="" />
                 </a>
                 <div className="inner">
@@ -86,7 +86,7 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a href="/#" className="image">
+                <a target="_blank" href="https://apus.ca/" className="image">
                   <img src={apus} alt="" />
                 </a>
                 <div className="inner">
@@ -97,7 +97,7 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a href="/#" className="image">
+                <a target="_blank" href="https://www.trekforteens.com/en/regions/toronto" className="image">
                   <img src={tft} alt="" />
                 </a>
                 <div className="inner">
@@ -108,13 +108,13 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a href="/#" className="image">
+                <a target="_blank" href="https://foodshare.net/" className="image">
                   <img src={fs} alt="" />
                 </a>
                 <div className="inner">
                   <h4>FoodShare</h4>
                   <p>
-                    Advisory and in-kind support ($6500)
+                    Food provider, logistical and in-kind support ($6500)
                   </p>
                 </div>
               </article>
@@ -187,7 +187,7 @@ const IndexPage = () => (
               <sup>superscript</sup> text and this is <sub>subscript</sub> text.
               This is <u>underlined</u> and this is code:{' '}
               <code>for (;;) ... </code>. Finally,{' '}
-              <a href="/#">this is a link</a>.
+              <a target="_blank" href="/#">this is a link</a>.
             </p>
             <hr />
             <header>
