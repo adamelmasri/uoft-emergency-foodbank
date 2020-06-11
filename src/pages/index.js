@@ -35,7 +35,7 @@ const IndexPage = () => (
               </p>
             </header>
             <p>
-              The COVID-19 crisis has amplified an existing problem for students across Canada: <em>food insecurity</em>.
+              The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <em>food insecurity</em>.
               Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only
               worsen the problem. Students from the Association Of Part-time Undergradute Students (APUS), 
               Engineers Without Borders and Trek for Teens have partnered with FoodShare 
@@ -58,9 +58,9 @@ const IndexPage = () => (
               <li className="fas fa-leaf">A box of healthy food will arrive at your door the following week</li>
             </ul>
             <p>
-              Every week students can register to receive a 
+              Every week students can register to receive a &nbsp;
               <a href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
-              containing fresh produce. Each box feeds 2-4 people and students can continously register
+              &nbsp;containing fresh produce. Each box feeds 2-4 people and students can continously register
               for as long as they need food. Information is provided to FoodShare by our volunteers
               in order to faciliate ordering and shipping. 
             </p>
