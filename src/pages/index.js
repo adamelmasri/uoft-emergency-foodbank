@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-import banner from '../assets/images/banner.jpg';
+import banner from '../assets/images/banner-min.jpg';
 
 import ewb from '../assets/images/ewb.png';
 import apus from '../assets/images/apus.png';
@@ -36,7 +36,6 @@ const IndexPage = () => (
             </header>
             <p>
               The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <b>food insecurity</b>.
-              <br/>
               Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only
               worsen the problem. Students from the Association of Part-time Undergradute Students (APUS), 
               Engineers Without Borders and Trek for Teens have partnered with FoodShare 
