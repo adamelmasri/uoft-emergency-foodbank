@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
@@ -31,13 +31,14 @@ const IndexPage = () => (
             <header className="major">
               <h2>A Contactless Foodbank for Students</h2>
               <p>
-                <a target="_blank" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">Register to receive a free box of food</a>.
+                <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">Register to receive a free box of produce</a>.
               </p>
             </header>
             <p>
-              The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <em>food insecurity</em>.
+              The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <b>food insecurity</b>.
+              <br/>
               Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only
-              worsen the problem. Students from the Association Of Part-time Undergradute Students (APUS), 
+              worsen the problem. Students from the Association of Part-time Undergradute Students (APUS), 
               Engineers Without Borders and Trek for Teens have partnered with FoodShare 
               to provide a safe way for food insecure students to access healthy food during difficult times. 
             </p>
@@ -49,21 +50,22 @@ const IndexPage = () => (
             <h3>How It Works</h3>
             <ul className="feature-icons">
               <li className="fa-user-plus">
-                <a target="_blank" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
-                  Register &nbsp; 
+                <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
+                  Register&nbsp; 
                   </a>
-                   for a box of food by providing us with your information. 
+                  for a box of produce using by providing your information no later than <b>Friday at 1pm</b>. 
                   </li>
-              <li className="fa-envelope">You'll receive an email by the end of the week confirming the details of your order.</li>
-              <li className="fas fa-leaf">A box of healthy food will arrive at your door the following week</li>
+              <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
+              <li className="fas fa-leaf">Your food will arrive at your door between <b>Wedneday and Saturday of the following week.</b></li>
             </ul>
             <p>
               Every week students can register to receive a &nbsp;
-              <a target="_blank" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
+              <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
               &nbsp;containing fresh produce. Each box feeds 2-4 people and students can continously register
               for as long as they need food. Information is provided to FoodShare by our volunteers
               in order to faciliate ordering and shipping. 
             </p>
+
           </div>
         </section>
 
@@ -75,8 +77,8 @@ const IndexPage = () => (
             </p>
             <div className="features">
               <article>
-                <a target="_blank" href="https://utoronto.ewb.ca/en/" className="image">
-                  <img src={ewb} alt="" />
+                <a target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
+                  <img src={ewb} alt="EWB logo" />
                 </a>
                 <div className="inner">
                   <h4>Engineers Without Borders Toronto</h4>
@@ -86,8 +88,8 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a target="_blank" href="https://apus.ca/" className="image">
-                  <img src={apus} alt="" />
+                <a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/" className="image">
+                  <img src={apus} alt="APUS logo" />
                 </a>
                 <div className="inner">
                   <h4>Association of Part-time Undergradute Students</h4>
@@ -97,8 +99,8 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a target="_blank" href="https://www.trekforteens.com/en/regions/toronto" className="image">
-                  <img src={tft} alt="" />
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
+                  <img src={tft} alt="Trek for Teens logo" />
                 </a>
                 <div className="inner">
                   <h4>Trek for Teens</h4>
@@ -108,8 +110,8 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
-                <a target="_blank" href="https://foodshare.net/" className="image">
-                  <img src={fs} alt="" />
+                <a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/" className="image">
+                  <img src={fs} alt="FoodShare logo" />
                 </a>
                 <div className="inner">
                   <h4>FoodShare</h4>
