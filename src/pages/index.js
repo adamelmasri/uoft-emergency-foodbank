@@ -7,6 +7,9 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
+import config from '../../config';
+
+
 import banner from '../assets/images/banner-min.jpg';
 
 import ewb from '../assets/images/ewb.png';
@@ -91,7 +94,7 @@ const IndexPage = () => (
                 </strong>
               or &nbsp; 
               <strong>
-              <a href="mailto:adam.el.masri@mail.utoronto.ca;donations.toronto@trekforteens.com;lpa.ewbuoft@gmail.com;"> 
+              <a href={config.socialLinks[0].url}> 
               contacting us&nbsp; 
               </a> 
               </strong>
@@ -196,7 +199,7 @@ const IndexPage = () => (
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
                       <h4>Joanna Roy</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEyI7Eh9YI7-w/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=qdA4X0BW_slZcgY49giVw7gSLG1DCRiezkBUABnM3PY" alt="" /></span>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHd9rfJDn4iwQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=nXa4ALPPvcSlt67RzLaWMFEaF5xMkliOjoqDAvxrsXQ" alt="" /></span>
                     </a>
                   </div>
 
@@ -208,9 +211,9 @@ const IndexPage = () => (
                   </div>
 
                   <div className="col-4 ">
-                    <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
+                    <a target="_blank" href="https://www.linkedin.com/in/sonam-vashisth-206340157/">
                       <h4>Sonam Vashisth</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHd9rfJDn4iwQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=nXa4ALPPvcSlt67RzLaWMFEaF5xMkliOjoqDAvxrsXQ" alt="" /></span>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C5603AQG2vB4ko6ABOw/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=-ZefYc95tB9ch_g5Dt-0UZgjzHvwYYC7JbfHwTa9VnY" alt="" /></span>
                     </a>
                   </div>
               </div>

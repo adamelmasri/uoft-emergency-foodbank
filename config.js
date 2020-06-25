@@ -15,7 +15,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:adam.el.masri@mail.utoronto.ca;donations.toronto@trekforteens.com;lpa.ewbuoft@gmail.com;',
+      url: 'mailto:adam.el.masri@mail.utoronto.ca,donations.toronto@trekforteens.com,lpa.ewbuoft@gmail.com,',
     },
   ],
 };
