@@ -682,7 +682,7 @@ input[type='radio'] {
   border: solid _size(border-width) _palette(border2);
   margin-bottom: _size(element-margin);
   padding: 1.5em;
-
+  text-align: center;
   > :last-child,
   > :last-child > :last-child,
   > :last-child > :last-child > :last-child {
@@ -1234,11 +1234,9 @@ input[type='button'],
     margin-bottom: _size(element-margin);
     padding-top: _size(element-margin);
 
-    &:first-child {
+    &:first-child{
       border-top: 0;
-      padding-top: 0;
     }
-
     .image {
       display: inline-block;
       padding-right: 2.5em;

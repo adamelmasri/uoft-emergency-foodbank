@@ -1,6 +1,8 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 
+
+
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
@@ -16,7 +18,9 @@ import fs from '../assets/images/fsb.png';
 const sections = [
   { id: 'one', name: 'Contactless Foodbank' },
   { id: 'two', name: 'How It Works' },
-  { id: 'three', name: 'Our Partners' },
+  { id: 'three', name: 'Partners and Sponsors' },
+  { id: 'four', name: 'Our Team' },
+
 ];
 const IndexPage = () => (
   <Layout>
@@ -41,12 +45,17 @@ const IndexPage = () => (
               Engineers Without Borders and Trek for Teens have partnered with FoodShare 
               to provide a safe way for food insecure students to access healthy food during difficult times. 
             </p>
+
+            <ul className="actions fit">
+                <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
+                <li><a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank" className="button fit icon fa-dollar">Donate to the initiative</a></li>
+              </ul>
           </div>
         </section>
 
         <section id="two">
           <div className="container">
-            <h3>How It Works</h3>
+            <h2>How It Works</h2>
             <ul className="feature-icons">
               <li className="fa-user-plus">
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
@@ -55,7 +64,7 @@ const IndexPage = () => (
                   for a box of produce using by providing your information no later than <b>Friday at 1pm</b>. 
                   </li>
               <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
-              <li className="fas fa-leaf">Your food will arrive at your door between <b>Wedneday and Saturday of the following week.</b></li>
+              <li className="fas fa-leaf">Your food will arrive at your door between <b>Wednesday and Saturday of the following week.</b></li>
             </ul>
             <p>
               Every week students can register to receive a &nbsp;
@@ -70,41 +79,47 @@ const IndexPage = () => (
 
         <section id="three">
           <div className="container">
-            <h3>Partners and Sponsors</h3>
+            <h2>Partners and Sponsors</h2>
             <p>
-              This initiative is made possible by the efforts and generosity of the following organizations:
+              This initiative is made possible by the efforts and generosity of the following organizations.
+              <br/>
+              Please consider&nbsp; 
+              <strong>
+              <a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank">
+              donating to the initiative &nbsp; 
+              </a> 
+                </strong>
+              or &nbsp; 
+              <strong>
+              <a href="mailto:adam.el.masri@mail.utoronto.ca;donations.toronto@trekforteens.com;lpa.ewbuoft@gmail.com;"> 
+              contacting us&nbsp; 
+              </a> 
+              </strong>
+              
+
+              if you'd like to support it through a partnership or sponsorship.
             </p>
+
             <div className="features">
-              <article>
-                <a target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
-                  <img src={ewb} alt="EWB logo" />
-                </a>
-                <div className="inner">
-                  <h4>Engineers Without Borders Toronto</h4>
-                  <p>
-                    Volunteer, outreach and financial support ($3000)
-                  </p>
-                </div>
-              </article>
-              <article>
+            <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/" className="image">
                   <img src={apus} alt="APUS logo" />
                 </a>
                 <div className="inner">
                   <h4>Association of Part-time Undergradute Students</h4>
                   <p>
-                    Advisory, outreach and financial support
+                    Advisory, outreach and financial support ($10000)
                   </p>
                 </div>
               </article>
               <article>
-                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
-                  <img src={tft} alt="Trek for Teens logo" />
+                <a  target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
+                  <img style={{width:"200px", margin:"auto"}} src={ewb} alt="EWB logo" />
                 </a>
                 <div className="inner">
-                  <h4>Trek for Teens</h4>
+                  <h4>Engineers Without Borders Toronto</h4>
                   <p>
-                    Volunteer and outreach support
+                    Volunteer, outreach and financial support ($3000)
                   </p>
                 </div>
               </article>
@@ -119,91 +134,92 @@ const IndexPage = () => (
                   </p>
                 </div>
               </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
+                  <img 
+                  style={{backgroundColor:"#25355A", padding:"20px",}}
+                  src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="Trek for Teens logo" />
+                </a>
+                <div className="inner">
+                  <h4>University of Toronto School of Cities</h4>
+                  <p>
+                    Advisory, outreach and financial support ($1000)
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
+                  <img src={tft} alt="Trek for Teens logo" />
+                </a>
+                <div className="inner">
+                  <h4>Trek for Teens</h4>
+                  <p>
+                    Volunteer and outreach support
+                  </p>
+                </div>
+              </article>
+              
+            
             </div>
           </div>
         </section>
 
-        {/* <section id="four">
-          <div className="container">
-            <h3>Contact Us</h3>
-            <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
-            </p>
-            <form method="post" action="#">
-              <div className="row gtr-uniform">
-                <div className="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div className="col-6 col-12-xsmall">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="col-12">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div className="col-12">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    rows="6"
-                  />
-                </div>
-                <div className="col-12">
-                  <ul className="actions">
-                    <li>
-                      <input
-                        type="submit"
-                        className="primary"
-                        value="Send Message"
-                      />
-                    </li>
-                    <li>
-                      <input type="reset" value="Reset Form" />
-                    </li>
-                  </ul>
-                </div>
+        <section id="four">
+              <div className="container">
+              <h2>Our Team</h2>
+              <p>This initiative is led by the following project organizers:</p>
+              <div className="box alt">
+                <div className="row gtr-50 gtr-uniform">
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/adamelmasri/">
+                      <h4>Adam El-Masri</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHQPdNtzEK8bg/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=G86pWKA8aolKipsvTusSbm1n_WJ9qFKCWdLT8C60SXE" alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/tanya-iyer-880981bb/">
+                      <h4>Tanya Iyer</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHBdbTENndskQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=wAvduSqeWiBfEvdKgNTvRdpVoPgsQRURvdi6wQoktTE" alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/amaial-mullick-6143b3152/">
+                      <h4>Amaial Mullick</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEyI7Eh9YI7-w/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=qdA4X0BW_slZcgY49giVw7gSLG1DCRiezkBUABnM3PY" alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
+                      <h4>Joanna Roy</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEyI7Eh9YI7-w/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=qdA4X0BW_slZcgY49giVw7gSLG1DCRiezkBUABnM3PY" alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/rima-uraiqat/">
+                      <h4>Rima Uraiqat</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEbDl-TiAa6rA/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=1RMjI_cMSSI34uN5ClvQGmSqBd3DseTelyd62lmY46c" alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-4 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
+                      <h4>Sonam Vashisth</h4>
+                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHd9rfJDn4iwQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=nXa4ALPPvcSlt67RzLaWMFEaF5xMkliOjoqDAvxrsXQ" alt="" /></span>
+                    </a>
+                  </div>
               </div>
-            </form>
-          </div>
-        </section>
-        <section id="five">
-          <div className="container">
-            <h3>Elements</h3>
-            <h4>Text</h4>
-            <p>
-              This is <b>bold</b> and this is <strong>strong</strong>. This is{' '}
-              <i>italic</i> and this is <em>emphasized</em>. This is{' '}
-              <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-              This is <u>underlined</u> and this is code:{' '}
-              <code>for (;;) ... </code>. Finally,{' '}
-              <a target="_blank" href="/#">this is a link</a>.
-            </p>
-            <hr />
-            <header>
-              <h4>Heading with a Subtitle</h4>
-              <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-            </header>
-            <br />
-            <h5>
-              This started contains all HTML elements
-              <br />
-              Checkout available styling
-              <Link to="/Element"> here</Link>
-            </h5>
-          </div>
-        </section> */}
+              </div>
+              </div>
+            </section>
+
+
+        
       </div>
     </div>
     <section id="footer">

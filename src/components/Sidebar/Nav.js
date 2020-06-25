@@ -5,7 +5,6 @@ import Scroll from './Scroll';
 export default function Nav({ sections = [] }) {
   return (
     <nav id="nav">
-      <ul>
         <Scrollspy
           items={sections.map(s => s.id)}
           currentClassName="active"
@@ -21,7 +20,6 @@ export default function Nav({ sections = [] }) {
             );
           })}
         </Scrollspy>
-      </ul>
     </nav>
   );
 }
