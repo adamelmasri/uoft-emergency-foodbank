@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import { Link } from 'gatsby';
 
 
@@ -17,14 +17,42 @@ import apus from '../assets/images/apus.png';
 import tft from '../assets/images/tftb.png';
 import fs from '../assets/images/fsb.png';
 
+import { Card } from 'react-bootstrap';
+import { CardGroup}  from 'react-bootstrap';
+import { CardDeck}  from 'react-bootstrap';
+import { Alert}  from 'react-bootstrap';
+import { Button}  from 'react-bootstrap';
+
+
+
+
 
 const sections = [
   { id: 'one', name: 'Contactless Foodbank' },
   { id: 'two', name: 'How It Works' },
   { id: 'three', name: 'Partners and Sponsors' },
   { id: 'four', name: 'Our Team' },
+  { id: 'five', name: 'Media'}
 
 ];
+
+function AlertDismissibleExample() {
+  const [show, setShow] = useState(true);
+
+  if (show) {
+    return (
+      <Alert variant="warning" onClose={() => setShow(false)} dismissible>
+        <span className="align-center">
+          Please note that requests must now be made by Friday at 11am. 
+        </span>
+      </Alert>
+    );
+  }
+  return <div></div>;
+}
+
+
+
 const IndexPage = () => (
   <Layout>
     <SideBar sections={sections} />
@@ -34,6 +62,8 @@ const IndexPage = () => (
           <div className="image main" data-position="center">
             <img src={banner} alt="" />
           </div>
+          <AlertDismissibleExample/>
+
           <div className="container">
             <header className="major">
               <h2>A Contactless Foodbank for Students</h2>
@@ -64,7 +94,7 @@ const IndexPage = () => (
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
                   Register&nbsp; 
                   </a>
-                  for a box of produce using by providing your information no later than <b>Friday at 1pm</b>. 
+                  for a box of produce using by providing your information no later than <b>Friday at 11 am</b>. 
                   </li>
               <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
               <li className="fas fa-leaf">Your food will arrive at your door between <b>Wednesday and Saturday of the following week.</b></li>
@@ -219,6 +249,36 @@ const IndexPage = () => (
               </div>
               </div>
               </div>
+            </section>
+
+            <section id="five">
+              <div className="container">
+              <h2>Media</h2>
+              <p>Publicity and news articles regarding this initiative</p>
+
+              <CardDeck>
+  <Card>
+    <Card.Img variant="top" src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/Snip20200617_50.png" />
+    <Card.Body>
+      <Card.Title>SofC Fellow leads an initiative to create UofT Emergency Foodbank</Card.Title>
+      <Card.Text>
+      With the closing down of the only Foodbank at UofT, 2020 Student Fellow and Student Academy member Adam El-Masri, 
+      with support from a group of similarly driven U of T students, put into motion the creation of a UofT Emergency Foodbank for economically vulnerable students. 
+      Read our interview with Adam, where he explains what made him embark on this ambitious project and the motivation behind his dedication.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">
+        <Card.Link target="_blank" href="https://www.schoolofcities.utoronto.ca/news/sofc-fellow-leads-initiative-create-uoft-emergency-foodbank">
+          Source: School of Cities News
+        </Card.Link>
+      </small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+              </div>
+
             </section>
 
 
