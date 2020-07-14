@@ -82,6 +82,8 @@ const IndexPage = () => (
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank" className="button fit icon fa-dollar">Donate to the initiative</a></li>
+                <li><a rel="noreferrer nofollow" href="/similar-initiatives" className="button fit icon fa-search">See similar initiatives</a></li>
+
               </ul>
           </div>
         </section>
@@ -254,13 +256,16 @@ const IndexPage = () => (
             <section id="five">
               <div className="container">
               <h2>Media</h2>
-              <p>Publicity and news articles regarding this initiative</p>
+              <p>Publicity and news articles regarding this initiative.</p>
 
               <CardDeck>
   <Card>
+    <Card.Header>
+    <Card.Text>
+    SofC Fellow leads an initiative to create UofT Emergency Foodbank</Card.Text>
+    </Card.Header>
     <Card.Img variant="top" src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/Snip20200617_50.png" />
     <Card.Body>
-      <Card.Title>SofC Fellow leads an initiative to create UofT Emergency Foodbank</Card.Title>
       <Card.Text>
       With the closing down of the only Foodbank at UofT, 2020 Student Fellow and Student Academy member Adam El-Masri, 
       with support from a group of similarly driven U of T students, put into motion the creation of a UofT Emergency Foodbank for economically vulnerable students. 
@@ -275,6 +280,7 @@ const IndexPage = () => (
       </small>
     </Card.Footer>
   </Card>
+  
 </CardDeck>
 
               </div>
