@@ -44,8 +44,8 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Eventually' },
-                { name: 'keywords', content: 'site, web' },
+                { name: 'description', content: 'A foodbank for UofT students to receive emergency GoodFood boxes' },
+                { name: 'keywords', content: 'food insecurity, foodbank, uoft, university of toronto, foodshare, student' },
               ]}
             >
               <html lang="en" />
