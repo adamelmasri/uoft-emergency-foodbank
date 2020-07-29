@@ -104,6 +104,64 @@ const IndexPage = () => (
                  
                 </div>
               </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.upliftkitchen.ca/" className="image">
+                  <img src="https://static.ucraft.app/fs/ucraft/userFiles/upliftkitchen/images/logo.png?v=1591563056" alt="Uplift Kitchen Logo" />
+                </a>
+                <div className="inner">
+
+                <Accordion >
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                      Uplift Kitchen
+                      </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="0">
+                      <Card.Body>                  
+                      <p>
+                      Uplift Kitchen is two friends who see a need in our community and have the means to help. 
+                      Our goal is to give Black identifying folks the food and resources they need to survive during this time of global crisis, and in the future.                         </p>
+                     </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+
+                </Accordion>
+                 
+                 
+                </div>
+              </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.instagram.com/cf___to/" className="image">
+                  <img src="https://instagram.fybz2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/109024262_276370246986164_981173937791864574_n.jpg?_nc_ht=instagram.fybz2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=KUseIhVEUxYAX-zzYgT&oh=5bfb2d0e1a5efcec62d079591e25cf16&oe=5F496B76" alt="Community Fridge Toronto" />
+                </a>
+                <div className="inner">
+
+                <Accordion >
+                  <Card>
+                    <Card.Header>
+                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                      Community Fridge Toronto
+                      </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="0">
+                      <Card.Body>                  
+                      <p>
+                      
+                      refrigerators run by the community for the community.
+aiming to tackle food disparity and redistribute wealth n privilege.
+cleaned and restocked daily                         </p>
+                     </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+
+                </Accordion>
+                 
+                 
+                </div>
+              </article>
               
             
             </div>
