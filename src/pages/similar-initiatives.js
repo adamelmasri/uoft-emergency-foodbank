@@ -7,6 +7,8 @@ import { Card } from 'react-bootstrap';
 import { Accordion } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
+import pp  from '../assets/images/peoplespantry.png';
+
 
 
 const IndexPage = () => (
@@ -47,7 +49,7 @@ const IndexPage = () => (
 
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/e/1FAIpQLScmtnMtpsWjTp5kicU3_X2mrM5t57A-4k7U7jYDaiWdFmSAfQ/viewform?fbclid=IwAR0NGWUuJj8hkW1CPvj3-xp8vwKtx0YEgG9JNR6GLVhinj6Fd0mzmNqiDMA" className="image">
-                  <img src="https://scontent.fyyz1-2.fna.fbcdn.net/v/t1.0-9/97977035_10220091796039023_8588258167480123392_n.jpg?_nc_cat=108&_nc_sid=ca434c&_nc_ohc=KbOvx8Ehi7UAX9lPOmJ&_nc_ht=scontent.fyyz1-2.fna&oh=5a6dece1c5cea2061c1b2a2df1999160&oe=5F345009" alt="The People's Pantry Logo" />
+                  <img src={pp} alt="The People's Pantry Logo" />
                 </a>
                 <div className="inner">
 
@@ -65,7 +67,7 @@ const IndexPage = () => (
                         </p>
 
                         <p>
-                In response to the pandemic, The People's Pantry is a grassroots initiative providing home-cooked meals and grocery bundles to individuals and families across the GTA who have been disproportionately affected by the COVID-19 crisis. We serve those who are struggling financially or are otherwise unable to provide sufficient food for themselves and their family. Meals and groceries will be delivered right to their door, 100% free of charge. 
+                In response to the pandemic, The People's Pantry is a grassroots initiative providing home-cooked meals and grocery bundles to individuals and families across the GTA who have been disproportionately affected by the COVID-19 crisis. We serve those who are struggling financially or are otherwise unable to provide sufficient food for themselves and their family. Meals and groceries will be delivered right to their door, 100% free of charge, no questions asked, no fixed address required. 
                 </p>
                      </Card.Body>
                     </Accordion.Collapse>
