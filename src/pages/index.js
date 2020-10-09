@@ -89,7 +89,7 @@ const IndexPage = () => (
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank" className="button fit icon fa-dollar">Donate to the initiative</a></li>
-                <li><a rel="noreferrer nofollow" href="/similar-resources" className="button fit icon fa-search">See similar resources</a></li>
+                <li><a rel="noreferrer nofollow" href="/additional-resources" className="button fit icon fa-search">See similar resources</a></li>
 
               </ul>
           </div>
@@ -223,7 +223,7 @@ const IndexPage = () => (
               <li className="fa-archive"><strong>850+ boxes delivered</strong> </li>
               <li className="fa-users"> <strong> 275+ students served </strong> </li>
               <li className="fa-usd"><strong>$20k+ in funds raised</strong> to tackle food insecurity</li>
-              <li className="fa-book"><a rel="noreferrer nofollow" href="/similar-resources">Student financial aid guide developed</a></li>
+              <li className="fa-book"><a rel="noreferrer nofollow" href="/additional-resources">Student financial aid guide developed</a></li>
               <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
 
 
