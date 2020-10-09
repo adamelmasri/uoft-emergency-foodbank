@@ -9,7 +9,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   authorName: 'UofT Emergency Foodbank',
-  heading: "A joint initiative by APUS, EWB, FoodShare and Trek for Teens",
+  heading: "A joint initiative by EWB and Trek for Teens - sponsored by the UofT community",
   // social
   socialLinks: [
     {

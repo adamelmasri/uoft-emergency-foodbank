@@ -16,6 +16,13 @@ import ewb from '../assets/images/ewb.png';
 import apus from '../assets/images/apus.png';
 import tft from '../assets/images/tftb.png';
 import fs from '../assets/images/fsb.png';
+import joanna from '../assets/images/joanna-li.jpeg'
+import adam from '../assets/images/adam-li.jpeg'
+import tanya from '../assets/images/tanya-li.jpeg'
+import amaial from '../assets/images/amaial-li.jpeg'
+import sonam from '../assets/images/sonam-li.jpeg'
+
+
 
 import { Card } from 'react-bootstrap';
 import { CardGroup}  from 'react-bootstrap';
@@ -31,8 +38,9 @@ const sections = [
   { id: 'one', name: 'Contactless Foodbank' },
   { id: 'two', name: 'How It Works' },
   { id: 'three', name: 'Partners and Sponsors' },
-  { id: 'four', name: 'Our Team' },
-  { id: 'five', name: 'Media'}
+  { id: 'four', name: 'Program Goals and Impact' },
+  { id: 'five', name: 'Our Team' },
+  { id: 'six', name: 'Media'}
 
 ];
 
@@ -62,7 +70,7 @@ const IndexPage = () => (
           <div className="image main" data-position="center">
             <img src={banner} alt="" />
           </div>
-          <AlertDismissibleExample/>
+          {/* <AlertDismissibleExample/> */}
 
           <div className="container">
             <header className="major">
@@ -74,15 +82,14 @@ const IndexPage = () => (
             <p>
               The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <b>food insecurity</b>.
               Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only
-              worsen the problem. Students from the Association of Part-time Undergradute Students (APUS), 
-              Engineers Without Borders and Trek for Teens have partnered with FoodShare 
+              worsen the problem. Students from Engineers Without Borders and Trek for Teens have partnered with FoodShare 
               to provide a safe way for food insecure students to access healthy food during difficult times. 
             </p>
 
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank" className="button fit icon fa-dollar">Donate to the initiative</a></li>
-                <li><a rel="noreferrer nofollow" href="/similar-initiatives" className="button fit icon fa-search">See similar initiatives</a></li>
+                <li><a rel="noreferrer nofollow" href="/similar-resources" className="button fit icon fa-search">See similar resources</a></li>
 
               </ul>
           </div>
@@ -96,7 +103,7 @@ const IndexPage = () => (
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
                   Register&nbsp; 
                   </a>
-                  for a box of produce using by providing your information no later than <b>Friday at 11 am</b>. 
+                  for a box of produce using by providing your information no later than <b>Friday at 1 pm</b>. 
                   </li>
               <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
               <li className="fas fa-leaf">Your food will arrive at your door between <b>Wednesday and Saturday of the following week.</b></li>
@@ -106,7 +113,8 @@ const IndexPage = () => (
               <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
               &nbsp;containing fresh produce. Each box feeds 2-4 people and students can continously register
               for as long as they need food. Information is provided to FoodShare by our volunteers
-              in order to faciliate ordering and shipping. 
+              in order to faciliate ordering and shipping. <strong>Please note we can only support 50 students per week on a first-come, first-serve
+              basis.</strong>
             </p>
 
           </div>
@@ -202,6 +210,29 @@ const IndexPage = () => (
         </section>
 
         <section id="four">
+          <div className="container">
+            <h2>Program Goals and Impacts</h2>
+            <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice through food justice.
+               Recognizing that food insecurity is a 
+              symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
+              establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
+              as it pertains to the barriers created by financial hardship. .
+            </p>
+            <h3>Impact to date</h3>
+            <ul className="feature-icons impact-icons">
+              <li className="fa-archive"><strong>850+ boxes delivered</strong> </li>
+              <li className="fa-users"> <strong> 275+ students served </strong> </li>
+              <li className="fa-usd"><strong>$20k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-book"><a rel="noreferrer nofollow" href="/similar-resources">Student financial aid guide developed</a></li>
+              <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
+
+
+            </ul>
+           
+          </div>
+        </section>
+
+        <section id="five">
               <div className="container">
               <h2>Our Team</h2>
               <p>This initiative is led by the following project organizers:</p>
@@ -210,42 +241,35 @@ const IndexPage = () => (
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/adamelmasri/">
                       <h4>Adam El-Masri</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHQPdNtzEK8bg/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=G86pWKA8aolKipsvTusSbm1n_WJ9qFKCWdLT8C60SXE" alt="" /></span>
+                      <span className="image fit"><img src={adam} alt="" /></span>
                     </a>
                   </div>
 
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/tanya-iyer-880981bb/">
                       <h4>Tanya Iyer</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHBdbTENndskQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=wAvduSqeWiBfEvdKgNTvRdpVoPgsQRURvdi6wQoktTE" alt="" /></span>
+                      <span className="image fit"><img src={tanya} alt="" /></span>
                     </a>
                   </div>
 
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/amaial-mullick-6143b3152/">
                       <h4>Amaial Mullick</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEyI7Eh9YI7-w/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=qdA4X0BW_slZcgY49giVw7gSLG1DCRiezkBUABnM3PY" alt="" /></span>
+                      <span className="image fit"><img src={amaial} alt="" /></span>
                     </a>
                   </div>
 
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
                       <h4>Joanna Roy</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHd9rfJDn4iwQ/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=nXa4ALPPvcSlt67RzLaWMFEaF5xMkliOjoqDAvxrsXQ" alt="" /></span>
-                    </a>
-                  </div>
-
-                  <div className="col-4 ">
-                    <a target="_blank" href="https://www.linkedin.com/in/rima-uraiqat/">
-                      <h4>Rima Uraiqat</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEbDl-TiAa6rA/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=1RMjI_cMSSI34uN5ClvQGmSqBd3DseTelyd62lmY46c" alt="" /></span>
+                      <span className="image fit"><img src={joanna} alt="" /></span>
                     </a>
                   </div>
 
                   <div className="col-4 ">
                     <a target="_blank" href="https://www.linkedin.com/in/sonam-vashisth-206340157/">
                       <h4>Sonam Vashisth</h4>
-                      <span className="image fit"><img src="https://media-exp1.licdn.com/dms/image/C5603AQG2vB4ko6ABOw/profile-displayphoto-shrink_800_800/0?e=1598486400&v=beta&t=-ZefYc95tB9ch_g5Dt-0UZgjzHvwYYC7JbfHwTa9VnY" alt="" /></span>
+                      <span className="image fit"><img src={sonam} alt="" /></span>
                     </a>
                   </div>
               </div>
@@ -253,7 +277,7 @@ const IndexPage = () => (
               </div>
             </section>
 
-            <section id="five">
+            <section id="six">
               <div className="container">
               <h2>Media</h2>
               <p>Publicity and news articles regarding this initiative.</p>

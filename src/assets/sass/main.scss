@@ -997,6 +997,13 @@ ul.actions {
 
 /* Feature Icons */
 
+ul.impact-icons{
+  li{
+    width: 48% !important;
+    display: inline-block !important;
+  }
+}
+
 ul.feature-icons {
   list-style: none;
   padding-left: 0;
