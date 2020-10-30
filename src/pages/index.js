@@ -88,8 +88,7 @@ const IndexPage = () => (
 
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
-                <li><a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank" className="button fit icon fa-dollar">Donate to the initiative</a></li>
-                <li><a rel="noreferrer nofollow" href="/additional-resources" className="button fit icon fa-search">See similar resources</a></li>
+                <li><a rel="noreferrer nofollow" href="/additional-resources" className="button fit icon fa-search">See additional resources</a></li>
 
               </ul>
           </div>
@@ -103,7 +102,7 @@ const IndexPage = () => (
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
                   Register&nbsp; 
                   </a>
-                  for a box of produce using by providing your information no later than <b>Friday at 1 pm</b>. 
+                  for a box of produce by providing your information no later than <b>Friday at 1 pm</b>. 
                   </li>
               <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
               <li className="fas fa-leaf">Your food will arrive at your door between <b>Wednesday and Saturday of the following week.</b></li>
@@ -142,9 +141,9 @@ const IndexPage = () => (
 
               if you'd like to support it through a partnership or sponsorship.
             </p>
-
             <div className="features">
-            <article>
+            
+              <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/" className="image">
                   <img src={apus} alt="APUS logo" />
                 </a>
@@ -156,13 +155,24 @@ const IndexPage = () => (
                 </div>
               </article>
               <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.cupe3902.org/" className="image">
+                  <img src="https://www.cupe3902.org/wp-content/uploads/2016/11/logo-red-blue-0.5x-300x187.png" alt="CUPE 3902 logo" />
+                </a>
+                <div className="inner">
+                  <h4>CUPE 3902</h4>
+                  <p>
+                    Advisory, outreach and financial support ($5000)
+                  </p>
+                </div>
+              </article>
+              <article>
                 <a  target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
                   <img style={{width:"200px", margin:"auto"}} src={ewb} alt="EWB logo" />
                 </a>
                 <div className="inner">
                   <h4>Engineers Without Borders Toronto</h4>
                   <p>
-                    Volunteer, outreach and financial support ($3000)
+                    Volunteer, outreach and financial support ($4000)
                   </p>
                 </div>
               </article>
@@ -216,13 +226,13 @@ const IndexPage = () => (
                Recognizing that food insecurity is a 
               symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
               establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
-              as it pertains to the barriers created by financial hardship. .
+              as it pertains to the barriers created by financial hardship.
             </p>
             <h3>Impact to date</h3>
             <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>850+ boxes delivered</strong> </li>
-              <li className="fa-users"> <strong> 275+ students served </strong> </li>
-              <li className="fa-usd"><strong>$20k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-archive"><strong>950+ boxes delivered</strong> </li>
+              <li className="fa-users"> <strong> 290+ students served </strong> </li>
+              <li className="fa-usd"><strong>$26k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a rel="noreferrer nofollow" href="/additional-resources">Student financial aid guide developed</a></li>
               <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
 
