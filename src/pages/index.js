@@ -37,8 +37,8 @@ import { Button}  from 'react-bootstrap';
 const sections = [
   { id: 'one', name: 'Contactless Foodbank' },
   { id: 'two', name: 'How It Works' },
-  { id: 'three', name: 'Partners and Sponsors' },
-  { id: 'four', name: 'Program Goals and Impact' },
+  { id: 'three', name: 'Goals and Impact' },
+  { id: 'four', name: 'Partners and Sponsors' },
   { id: 'five', name: 'Our Team' },
   { id: 'six', name: 'Media'}
 
@@ -49,11 +49,11 @@ function AlertDismissibleExample() {
 
   if (show) {
     return (
-      <Alert variant="warning" onClose={() => setShow(false)} dismissible>
-        <span className="align-center">
-          Please note that requests must now be made by Friday at 11am. 
-        </span>
-      </Alert>
+      <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+          <p style={{textAlign:"center", margin:"0"}}>
+          We updated our <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources">'Additional Resources'</a> page on November 17th with services and resource lists within Toronto, Peel, York and Durham. 
+          If you require urgent food relief services, please refer to the 'City-listed resources' or the automated chatbot 'Chalmers'.
+            </p></Alert>
     );
   }
   return <div></div>;
@@ -70,7 +70,7 @@ const IndexPage = () => (
           <div className="image main" data-position="center">
             <img src={banner} alt="" />
           </div>
-          {/* <AlertDismissibleExample/> */}
+          <AlertDismissibleExample/>
 
           <div className="container">
             <header className="major">
@@ -80,10 +80,11 @@ const IndexPage = () => (
               </p>
             </header>
             <p>
-              The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: <b>food insecurity</b>.
-              Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only
-              worsen the problem. Students from Engineers Without Borders and Trek for Teens have partnered with FoodShare 
-              to provide a safe way for food insecure students to access healthy food during difficult times. 
+            The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: food insecurity. 
+            Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only worsen the problem. 
+            Students and staff from various unions, student groups and faculties have partnered to provide a safe way for food-insecure students to access healthy food during difficult times. 
+            We do so by providing food boxes and resources on financial aid.
+ 
             </p>
 
             <ul className="actions fit">
@@ -121,20 +122,37 @@ const IndexPage = () => (
 
         <section id="three">
           <div className="container">
+            <h2>Goals and Impact</h2>
+            <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice through food justice.
+               Recognizing that food insecurity is a 
+              symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
+              establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
+              as it pertains to the barriers created by financial hardship.
+            </p>
+            <h3>Impact to date</h3>
+            <ul className="feature-icons impact-icons">
+              <li className="fa-archive"><strong>1150+ boxes delivered</strong> </li>
+              <li className="fa-users"> <strong> 300+ students served </strong> </li>
+              <li className="fa-usd"><strong>$28k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
+              <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
+
+
+            </ul>
+           
+          </div>
+        </section>
+
+        <section id="four">
+          <div className="container">
             <h2>Partners and Sponsors</h2>
             <p>
               This initiative is made possible by the efforts and generosity of the following organizations.
               <br/>
-              Please consider&nbsp; 
-              <strong>
-              <a target="_blank" rel="noreferrer nofollow" href="https://www.gofundme.com/f/uoft-emergency-foodbank">
-              donating to the initiative &nbsp; 
-              </a> 
-                </strong>
-              or &nbsp; 
+              Please consider 
               <strong>
               <a href={config.socialLinks[0].url}> 
-              contacting us&nbsp; 
+              &nbsp;contacting us&nbsp;
               </a> 
               </strong>
               
@@ -172,7 +190,7 @@ const IndexPage = () => (
                 <div className="inner">
                   <h4>Engineers Without Borders Toronto</h4>
                   <p>
-                    Volunteer, outreach and financial support ($4000)
+                    Volunteer, outreach and financial support ($6000)
                   </p>
                 </div>
               </article>
@@ -219,28 +237,7 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="four">
-          <div className="container">
-            <h2>Program Goals and Impacts</h2>
-            <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice through food justice.
-               Recognizing that food insecurity is a 
-              symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
-              establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
-              as it pertains to the barriers created by financial hardship.
-            </p>
-            <h3>Impact to date</h3>
-            <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>950+ boxes delivered</strong> </li>
-              <li className="fa-users"> <strong> 290+ students served </strong> </li>
-              <li className="fa-usd"><strong>$26k+ in funds raised</strong> to tackle food insecurity</li>
-              <li className="fa-book"><a rel="noreferrer nofollow" href="/additional-resources">Student financial aid guide developed</a></li>
-              <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
-
-
-            </ul>
-           
-          </div>
-        </section>
+        
 
         <section id="five">
               <div className="container">

@@ -9,7 +9,7 @@ export default function Footer({ socialLinks = [] }) {
           return (
             <li key={url}>
               <a href={url} className={`icon ${icon}`}>
-                <span className="label">{name}</span>
+              &nbsp;{name}
               </a>
             </li>
           );
