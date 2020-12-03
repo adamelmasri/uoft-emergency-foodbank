@@ -89,8 +89,8 @@ const IndexPage = () => (
 
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
+                <li><a rel="noreferrer nofollow" href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfoodbank" className="button primary fit icon fa-dollar">Donate now</a></li>
                 <li><a rel="noreferrer nofollow" href="/additional-resources" className="button fit icon fa-search">See additional resources</a></li>
-
               </ul>
           </div>
         </section>
@@ -157,7 +157,13 @@ const IndexPage = () => (
               </strong>
               
 
-              if you'd like to support it through a partnership or sponsorship.
+              if you'd like to support it through a partnership or sponsorship. We also accept 
+
+              <strong>
+              <a href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfoodbank"> 
+              &nbsp;financial donations. &nbsp;
+              </a> 
+              </strong>
             </p>
             <div className="features">
             
