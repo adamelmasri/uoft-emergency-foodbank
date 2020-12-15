@@ -13,6 +13,7 @@ import config from '../../config';
 import banner from '../assets/images/banner-min.jpg';
 
 import ewb from '../assets/images/ewb.png';
+import sgs from '../assets/images/sgs.jpeg';
 import apus from '../assets/images/apus.png';
 import tft from '../assets/images/tftb.png';
 import fs from '../assets/images/fsb.png';
@@ -131,9 +132,9 @@ const IndexPage = () => (
             </p>
             <h3>Impact to date</h3>
             <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>1150+ boxes delivered</strong> </li>
+              <li className="fa-archive"><strong>1300+ boxes delivered</strong> </li>
               <li className="fa-users"> <strong> 300+ students served </strong> </li>
-              <li className="fa-usd"><strong>$28k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-usd"><strong>$34k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
               <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
 
@@ -174,7 +175,32 @@ const IndexPage = () => (
                 <div className="inner">
                   <h4>Association of Part-time Undergradute Students</h4>
                   <p>
-                    Advisory, outreach and financial support ($10000)
+                    Advisory, outreach and financial support ($13000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
+                  <img 
+                  style={{backgroundColor:"#25355A", padding:"20px",}}
+                  src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="Trek for Teens logo" />
+                </a>
+                <div className="inner">
+                  <h4>University of Toronto School of Graduate Studies</h4>
+                  <p>
+                    Advisory and financial support ($2000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="" className="image">
+                  <img 
+                  src={sgs} alt="School of Graduate Studies logo" />
+                </a>
+                <div className="inner">
+                  <h4>University of Toronto School of Cities</h4>
+                  <p>
+                    Advisory, outreach and financial support ($1000)
                   </p>
                 </div>
               </article>
@@ -207,24 +233,12 @@ const IndexPage = () => (
                 <div className="inner">
                   <h4>FoodShare</h4>
                   <p>
-                    Food provider, logistical and in-kind support ($6500)
+                    Food provider, logistical and in-kind support ($7500)
                   </p>
                 </div>
               </article>
 
-              <article>
-                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
-                  <img 
-                  style={{backgroundColor:"#25355A", padding:"20px",}}
-                  src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="Trek for Teens logo" />
-                </a>
-                <div className="inner">
-                  <h4>University of Toronto School of Cities</h4>
-                  <p>
-                    Advisory, outreach and financial support ($1000)
-                  </p>
-                </div>
-              </article>
+              
 
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
@@ -296,6 +310,27 @@ const IndexPage = () => (
               <p>Publicity and news articles regarding this initiative.</p>
 
               <CardDeck>
+  <Card>
+    <Card.Header>
+    <Card.Text>
+    Op-ed: How we’re tackling student food insecurity through COVID-19
+</Card.Text>
+    </Card.Header>
+    <Card.Img variant="top" src="https://thevarsity.ca/wp-content/uploads/2020/12/COMMENT_Blind-eye-to-Student-hunger-72_Fiona-Tung.jpg" />
+    <Card.Body>
+      <Card.Text>
+      U of T Emergency Foodbank members (Adam and Amaial) on the systemic nature of poverty
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">
+        <Card.Link target="_blank" href="https://thevarsity.ca/2020/12/06/op-ed-how-were-tackling-student-food-insecurity-through-covid-19/">
+          Source: The Varsity
+        </Card.Link>
+      </small>
+    </Card.Footer>
+  </Card>
+
   <Card>
     <Card.Header>
     <Card.Text>
