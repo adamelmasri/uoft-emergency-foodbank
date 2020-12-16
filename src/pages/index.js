@@ -17,6 +17,8 @@ import sgs from '../assets/images/sgs.jpeg';
 import apus from '../assets/images/apus.png';
 import tft from '../assets/images/tftb.png';
 import fs from '../assets/images/fsb.png';
+import philosophy from '../assets/images/philosophy.jpg';
+
 import joanna from '../assets/images/joanna-li.jpeg'
 import adam from '../assets/images/adam-li.jpeg'
 import tanya from '../assets/images/tanya-li.jpeg'
@@ -173,56 +175,21 @@ const IndexPage = () => (
                   <img src={apus} alt="APUS logo" />
                 </a>
                 <div className="inner">
-                  <h4>Association of Part-time Undergradute Students</h4>
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/">Association of Part-time Undergradute Students</a></h4>
                   <p>
                     Advisory, outreach and financial support ($13000)
                   </p>
                 </div>
               </article>
-              <article>
-                <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
-                  <img 
-                  style={{backgroundColor:"#25355A", padding:"20px",}}
-                  src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="Trek for Teens logo" />
-                </a>
-                <div className="inner">
-                  <h4>University of Toronto School of Graduate Studies</h4>
-                  <p>
-                    Advisory and financial support ($2000)
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a target="_blank" rel="noreferrer nofollow" href="" className="image">
-                  <img 
-                  src={sgs} alt="School of Graduate Studies logo" />
-                </a>
-                <div className="inner">
-                  <h4>University of Toronto School of Cities</h4>
-                  <p>
-                    Advisory, outreach and financial support ($1000)
-                  </p>
-                </div>
-              </article>
+
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://www.cupe3902.org/" className="image">
                   <img src="https://www.cupe3902.org/wp-content/uploads/2016/11/logo-red-blue-0.5x-300x187.png" alt="CUPE 3902 logo" />
                 </a>
                 <div className="inner">
-                  <h4>CUPE 3902</h4>
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.cupe3902.org/">CUPE 3902</a></h4>
                   <p>
                     Advisory, outreach and financial support ($5000)
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a  target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
-                  <img style={{width:"200px", margin:"auto"}} src={ewb} alt="EWB logo" />
-                </a>
-                <div className="inner">
-                  <h4>Engineers Without Borders Toronto</h4>
-                  <p>
-                    Volunteer, outreach and financial support ($6000)
                   </p>
                 </div>
               </article>
@@ -231,15 +198,63 @@ const IndexPage = () => (
                   <img src={fs} alt="FoodShare logo" />
                 </a>
                 <div className="inner">
-                  <h4>FoodShare</h4>
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
                   <p>
                     Food provider, logistical and in-kind support ($7500)
                   </p>
                 </div>
               </article>
-
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.schoolofcities.utoronto.ca/" className="image">
+                  <img 
+                  style={{backgroundColor:"#25355A", padding:"20px",}}
+                  src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="School of Cities logo" />
+                </a>
+                <div className="inner">
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.schoolofcities.utoronto.ca/">University of Toronto School of Cities</a></h4>
+                  <p>
+                  Advisory, outreach and financial support ($2000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.sgs.utoronto.ca/" className="image">
+                  <img 
+                  src={sgs} alt="School of Graduate Studies logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.sgs.utoronto.ca/">University of Toronto School of Graduate Studies</a></h4>
+                  <h4></h4>
+                  <p>
+                  Advisory and financial support ($1000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://philosophy.utoronto.ca/" className="image">
+                  <img 
+                  src={philosophy} alt="Department of Philosophy logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://philosophy.utoronto.ca/">University of Toronto - Department of Philosophy</a></h4>
+                  <p>
+                    Financial Support ($1000)
+                  </p>
+                </div>
+              </article>
               
-
+              <article>
+                <a  target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/" className="image">
+                  <img style={{width:"200px", margin:"auto"}} src={ewb} alt="EWB logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://utoronto.ewb.ca/en/">Engineers Without Borders Toronto</a></h4>
+                  <p>
+                    Volunteer, outreach and financial support ($6000)
+                  </p>
+                </div>
+              </article>
+            
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://www.trekforteens.com/en/regions/toronto" className="image">
                   <img src={tft} alt="Trek for Teens logo" />
