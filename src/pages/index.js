@@ -52,11 +52,20 @@ function AlertDismissibleExample() {
 
   if (show) {
     return (
+      <div>
       <Alert variant="primary" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
-          We updated our <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources">'Additional Resources'</a> page on November 17th with services and resource lists within Toronto, Peel, York and Durham. 
-          If you require urgent food relief services, please refer to the 'City-listed resources' or the automated chatbot 'Chalmers'.
-            </p></Alert>
+          Please note <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe"> our request form </a> 
+          opens on Sundays at noon and closes by Thursday at 10am or when our limit is reached. <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
+          are also available depending on your area and need.
+          </p></Alert>
+          <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+          <p style={{textAlign:"center", margin:"0"}}>
+          Our initiative is commmited to serving all students (registered or otherwise) and recent alumni. Please see our section titled 'Commitment to Accessibility'
+          to learn more.
+          </p></Alert>
+      </div>
+     
     );
   }
   return <div></div>;
@@ -87,7 +96,6 @@ const IndexPage = () => (
             Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only worsen the problem. 
             Students and staff from various unions, student groups and faculties have partnered to provide a safe way for food-insecure students to access healthy food during difficult times. 
             We do so by providing food boxes and resources on financial aid.
- 
             </p>
 
             <ul className="actions fit">
@@ -106,19 +114,30 @@ const IndexPage = () => (
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">
                   Register&nbsp; 
                   </a>
-                  for a box of produce by providing your information no later than <b>Friday at 1 pm</b>. 
+                  for a box of produce by providing your information no later than <b>Thursday at 10am</b>. 
                   </li>
               <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
-              <li className="fas fa-leaf">Your food will arrive at your door between <b>Wednesday and Saturday of the following week.</b></li>
+              <li className="fas fa-leaf">Your food will arrive at your door between <b>Tuesday and Sunday of the following week.</b></li>
             </ul>
             <p>
-              Every week students can register to receive a &nbsp;
-              <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">Good Food box</a>
-              &nbsp;containing fresh produce. Each box feeds 2-4 people and students can continously register
+              Every week registered and non-registered students (including recent alumni) can sign up to receive a &nbsp;
+              <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">large Good Food box</a>
+              &nbsp; 
+              or
+              &nbsp;
+              <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodbox.foodshare.net/collections/frontpage/products/large-box">small Good Food box</a>
+              &nbsp;
+              containing fresh produce. Students can continously register
               for as long as they need food. Information is provided to FoodShare by our volunteers
               in order to faciliate ordering and shipping. <strong>Please note we can only support 50 students per week on a first-come, first-serve
-              basis.</strong>
+              basis. The form may close early if we reach our limit. The form re-opens every Sunday at noon.</strong>
             </p>
+
+            <h3>Commitment to Accessibility</h3>
+            <p>If for any reason the information we request poses a barrier to accessing this service, please send us an email with your name and address and we will provide a box. If you are not comfortable with sharing your address, we can also provide a giftcard
+              using only your name and UofT email.<strong> As long as you self-identify as a member of the UofT community, we are committed to providing you with access to food to the best of our abilities.</strong> We welcome any and all feedback on how we can
+              improve our service and reduce barriers wherever possible.
+              </p>
 
           </div>
         </section>
@@ -134,9 +153,9 @@ const IndexPage = () => (
             </p>
             <h3>Impact to date</h3>
             <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>1300+ boxes delivered</strong> </li>
-              <li className="fa-users"> <strong> 300+ students served </strong> </li>
-              <li className="fa-usd"><strong>$34k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-archive"><strong>1600+ boxes delivered</strong> </li>
+              <li className="fa-users"> <strong> 410+ students served </strong> </li>
+              <li className="fa-usd"><strong>$35k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
               <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
 
@@ -200,7 +219,7 @@ const IndexPage = () => (
                 <div className="inner">
                 <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
                   <p>
-                    Food provider, logistical and in-kind support ($7500)
+                    Food provider, logistical and in-kind support ($12500)
                   </p>
                 </div>
               </article>
@@ -211,9 +230,9 @@ const IndexPage = () => (
                   src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/SchoolofCities_HeaderLogo8.png" alt="School of Cities logo" />
                 </a>
                 <div className="inner">
-                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.schoolofcities.utoronto.ca/">University of Toronto School of Cities</a></h4>
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.schoolofcities.utoronto.ca/">University of Toronto - School of Cities</a></h4>
                   <p>
-                  Advisory, outreach and financial support ($2000)
+                  Advisory, outreach and financial support ($1000)
                   </p>
                 </div>
               </article>
@@ -223,10 +242,10 @@ const IndexPage = () => (
                   src={sgs} alt="School of Graduate Studies logo" />
                 </a>
                 <div className="inner">
-                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.sgs.utoronto.ca/">University of Toronto School of Graduate Studies</a></h4>
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.sgs.utoronto.ca/">University of Toronto - School of Graduate Studies</a></h4>
                   <h4></h4>
                   <p>
-                  Advisory and financial support ($1000)
+                  Advisory and financial support ($2000)
                   </p>
                 </div>
               </article>
