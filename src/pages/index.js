@@ -38,7 +38,7 @@ import { Button}  from 'react-bootstrap';
 
 
 const sections = [
-  { id: 'one', name: 'Contactless Foodbank' },
+  { id: 'one', name: 'Contactless Food Bank' },
   { id: 'two', name: 'How It Works' },
   { id: 'three', name: 'Goals and Impact' },
   { id: 'four', name: 'Partners and Sponsors' },
@@ -49,6 +49,7 @@ const sections = [
 
 function AlertDismissibleExample() {
   const [show, setShow] = useState(true);
+  
 
   if (show) {
     return (
@@ -86,14 +87,14 @@ const IndexPage = () => (
 
           <div className="container">
             <header className="major">
-              <h2>A Contactless Foodbank for Students</h2>
+              <h2>A Contactless Food Bank for Students</h2>
               <p>
                 <a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe">Register to receive a free box of produce</a>.
               </p>
             </header>
             <p>
             The COVID-19 crisis has amplified an existing problem for students at UofT and across Canada: food insecurity. 
-            Student poverty, a lack of economic opportunity and the closure of the University's only foodbank can only worsen the problem. 
+            Student poverty, a lack of economic opportunity and the closure of the University's only food bank can only worsen the problem. 
             Students and staff from various unions, student groups and faculties have partnered to provide a safe way for food-insecure students to access healthy food during difficult times. 
             We do so by providing food boxes and resources on financial aid.
             </p>
@@ -144,6 +145,8 @@ const IndexPage = () => (
 
         <section id="three">
           <div className="container">
+          <div className="features">
+          
             <h2>Goals and Impact</h2>
             <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice through food justice.
                Recognizing that food insecurity is a 
@@ -151,17 +154,40 @@ const IndexPage = () => (
               establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
               as it pertains to the barriers created by financial hardship.
             </p>
-            <h3>Impact to date</h3>
+            <article>
+            <h3>Impact to Date</h3>
             <ul className="feature-icons impact-icons">
               <li className="fa-archive"><strong>1600+ boxes delivered</strong> </li>
               <li className="fa-users"> <strong> 410+ students served </strong> </li>
               <li className="fa-usd"><strong>$35k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
               <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
-
-
             </ul>
-           
+            </article>
+            
+            <article>
+            <h3>
+              'Feeding the Student Movement' Program 
+            </h3>
+            <p>
+              Our team has recently launched a food honoraria program that aims to support students who participate in online programming 
+              focusing on social justice and equity (e.g. workshops, panel discussions, etc.). In providing a food honoria, we are limiting a financial barrier that
+              often prohibits students in need from participating in equity and social justice seeking movements. Contact us if your
+              UofT group/organization/community is interested in collaborating. 
+            </p>
+            <div style={{}}>
+            <h4>Events we've sponsored</h4>
+            <ul className="feature-icons">
+            <li>
+              <a href="https://fb.me/e/4RoBuA8tR" target="_blank" rel="noreferrer nofollow">
+             Mental Health From the Margins: A Community Consultation By and For Equity-Seeking Groups and Students
+              </a> in collaboration with major UofT campus unions, college councils, professional faculty associations, and the MHPC
+            </li>
+            </ul>
+            </div>
+            </article>
+            
+           </div>
           </div>
         </section>
 
@@ -182,13 +208,23 @@ const IndexPage = () => (
               if you'd like to support it through a partnership or sponsorship. We also accept 
 
               <strong>
-              <a target="_blank" href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfoodbank"> 
+              <a target="_blank" href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfood bank"> 
               &nbsp;financial donations. &nbsp;
               </a> 
               </strong>
             </p>
             <div className="features">
-            
+            <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/" className="image">
+                  <img src={fs} alt="FoodShare logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
+                  <p>
+                    Food provider, logistical and in-kind support ($16000)
+                  </p>
+                </div>
+              </article>
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/" className="image">
                   <img src={apus} alt="APUS logo" />
@@ -212,17 +248,7 @@ const IndexPage = () => (
                   </p>
                 </div>
               </article>
-              <article>
-                <a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/" className="image">
-                  <img src={fs} alt="FoodShare logo" />
-                </a>
-                <div className="inner">
-                <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
-                  <p>
-                    Food provider, logistical and in-kind support ($12500)
-                  </p>
-                </div>
-              </article>
+              
               <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://www.schoolofcities.utoronto.ca/" className="image">
                   <img 
@@ -257,7 +283,7 @@ const IndexPage = () => (
                 <div className="inner">
                 <h4><a target="_blank" rel="noreferrer nofollow" href="https://philosophy.utoronto.ca/">University of Toronto - Department of Philosophy</a></h4>
                   <p>
-                    Financial Support ($1000)
+                    Financial Support ($500)
                   </p>
                 </div>
               </article>
@@ -343,7 +369,53 @@ const IndexPage = () => (
               <h2>Media</h2>
               <p>Publicity and news articles regarding this initiative.</p>
 
-              <CardDeck>
+              <CardDeck style={{marginBottom:"25px"}}>
+
+<Card >
+  <Card.Header>
+  <Card.Text>
+  Food Security: The Key to Student Self-fulfillment
+</Card.Text>
+  </Card.Header>
+  <Card.Img variant="top" src="http://blogs.studentlife.utoronto.ca/innovationhub/files/2020/04/cropped-Innovation-Hub-Icon-with-Text-1.png" />
+  <Card.Body>
+    <Card.Text>
+    A blog post releasing the findings of a report on student food security lists the UofT Emergency Food Bank as a resource. 
+    </Card.Text>
+  </Card.Body>
+  <Card.Footer>
+    <small className="text-muted">
+      <Card.Link target="_blank" href="http://blogs.studentlife.utoronto.ca/innovationhub/food-insecurity-the-key-to-student-self-fulfillment/">
+        Source: UofT Innovation Hub
+      </Card.Link>
+    </small>
+  </Card.Footer>
+</Card>
+<Card>
+    <Card.Header>
+    <Card.Text>
+    Hunger and Our Communities: Organization Highlight
+  </Card.Text>
+    </Card.Header>
+    <Card.Img variant="top" src="https://feedingcityorg.files.wordpress.com/2020/12/featured-images-ftc-50.png" />
+    <Card.Body>
+      <Card.Text>
+      Junior Researchers: Azra Alavi, Hannah Klemmensen, Olivia Rodrigo and Yusra Khalid highlight community organizations tackling food insecurity.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">
+        <Card.Link target="_blank" href="https://feedingcity.org/2020/12/18/hunger-and-our-communities-organization-highlight/">
+          Source: Feeding The City
+        </Card.Link>
+      </small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+  <CardDeck>
+
+ 
   <Card>
     <Card.Header>
     <Card.Text>
@@ -353,7 +425,7 @@ const IndexPage = () => (
     <Card.Img variant="top" src="https://thevarsity.ca/wp-content/uploads/2020/12/COMMENT_Blind-eye-to-Student-hunger-72_Fiona-Tung.jpg" />
     <Card.Body>
       <Card.Text>
-      U of T Emergency Foodbank members (Adam and Amaial) on the systemic nature of poverty
+      U of T Emergency Food Bank members (Adam and Amaial) on the systemic nature of poverty
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -368,14 +440,13 @@ const IndexPage = () => (
   <Card>
     <Card.Header>
     <Card.Text>
-    SofC Fellow leads an initiative to create UofT Emergency Foodbank</Card.Text>
+    SofC Fellow leads an initiative to create UofT Emergency Food Bank</Card.Text>
     </Card.Header>
     <Card.Img variant="top" src="https://www.schoolofcities.utoronto.ca/sites/www.schoolofcities.utoronto.ca/files/Snip20200617_50.png" />
     <Card.Body>
       <Card.Text>
-      With the closing down of the only Foodbank at UofT, 2020 Student Fellow and Student Academy member Adam El-Masri, 
-      with support from a group of similarly driven U of T students, put into motion the creation of a UofT Emergency Foodbank for economically vulnerable students. 
-      Read our interview with Adam, where he explains what made him embark on this ambitious project and the motivation behind his dedication.
+      With the closing down of the only Food Bank at UofT, 2020 Student Fellow Adam El-Masri, 
+      with support from a group of similarly driven U of T students, put into motion the creation of a UofT Emergency Food Bank for economically vulnerable students. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>

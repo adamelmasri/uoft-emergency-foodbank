@@ -44,8 +44,8 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'A foodbank for UofT students to receive emergency GoodFood boxes' },
-                { name: 'keywords', content: 'food insecurity, foodbank, uoft, university of toronto, foodshare, student, covid, uoft foodbank, emergency' },
+                { name: 'description', content: 'A food bank for UofT students to receive emergency GoodFood boxes' },
+                { name: 'keywords', content: 'food insecurity, food bank, uoft, university of toronto, foodshare, student, covid, uoft food bank, emergency' },
               ]}
             >
               <html lang="en" />

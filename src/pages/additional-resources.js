@@ -256,7 +256,7 @@ const IndexPage = () => (
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                   <p>
-                  A list of foodbanks and food services within the City of Toronto. Make sure to select the region of Toronto you're in before
+                  A list of food banks and food services within the City of Toronto. Make sure to select the region of Toronto you're in before
                   providing your postal code. 
                   </p>
                 </Card.Body>
