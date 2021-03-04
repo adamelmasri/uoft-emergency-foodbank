@@ -148,7 +148,7 @@ const IndexPage = () => (
           <div className="features">
           
             <h2>Goals and Impact</h2>
-            <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice through food justice.
+            <p> Our immediate goal is to ensure that students have consistent access to food. Our long-term goal is to advocate for economic justice and poverty alleviation.
                Recognizing that food insecurity is a 
               symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
               establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
