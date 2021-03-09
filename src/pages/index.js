@@ -168,11 +168,11 @@ const IndexPage = () => (
             <article>
             <h3>Impact to Date</h3>
             <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>1600+ boxes delivered</strong> </li>
-              <li className="fa-users"> <strong> 410+ students served </strong> </li>
-              <li className="fa-usd"><strong>$35k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-archive"><strong>1850+ boxes and giftcards provided</strong> </li>
+              <li className="fa-users"> <strong> 425+ students served </strong> </li>
+              <li className="fa-usd"><strong>$65k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
-              <li className="fa-handshake-o"><strong>10 solidarity partnerships formed</strong> with UofT and community organizations  </li>
+              <li className="fa-handshake-o"><strong>10+ solidarity partnerships formed</strong> with UofT and community organizations  </li>
             </ul>
             </article>
             
