@@ -7,7 +7,10 @@ export default function PageFooter() {
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>
+        <li>
+        Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>        </li>
       </ul>
     </div>
   );
 }
+

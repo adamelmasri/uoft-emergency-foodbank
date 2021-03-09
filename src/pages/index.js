@@ -18,12 +18,23 @@ import apus from '../assets/images/apus.png';
 import tft from '../assets/images/tftb.png';
 import fs from '../assets/images/fsb.png';
 import philosophy from '../assets/images/philosophy.jpg';
+import cfcc from '../assets/images/cfcc.png';
+import uoft from '../assets/images/uoft.png';
+
+
 
 import joanna from '../assets/images/joanna-li.jpeg'
 import adam from '../assets/images/adam-li.jpeg'
 import tanya from '../assets/images/tanya-li.jpeg'
 import amaial from '../assets/images/amaial-li.jpeg'
 import sonam from '../assets/images/sonam-li.jpeg'
+import bridget from '../assets/images/bridget.jpeg'
+import person from '../assets/images/user.png'
+import chaintanya from '../assets/images/chaintanya.jpeg'
+import shiqi from '../assets/images/shiqi.jpeg'
+
+
+
 
 
 
@@ -215,13 +226,25 @@ const IndexPage = () => (
             </p>
             <div className="features">
             <article>
+                <a  target="_blank" rel="noreferrer nofollow" href="" className="image">
+                  <img style={{width:"200px", margin:"auto"}} src={cfcc} alt="CFCC logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://cfccanada.ca/en-US/Home">Community Food Centres Canada</a></h4>
+                  <p>
+                    We are a <a target="_blank" rel="noreferrer nofollow" href="https://goodfoodorganizations.ca/"></a>Good Food organization partner receiving
+                    training on food bank redevelopment and training on advocacy and campaigning.
+                  </p>
+                </div>
+              </article>
+            <article>
                 <a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/" className="image">
                   <img src={fs} alt="FoodShare logo" />
                 </a>
                 <div className="inner">
                 <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
                   <p>
-                    Food provider, logistical and in-kind support ($16000)
+                    Food provider, logistical, strategic and in-kind support ($16000)
                   </p>
                 </div>
               </article>
@@ -233,6 +256,17 @@ const IndexPage = () => (
                   <h4><a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/">Association of Part-time Undergradute Students</a></h4>
                   <p>
                     Advisory, outreach and financial support ($13000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.viceprovoststudents.utoronto.ca/" className="image">
+                  <img src={uoft} alt="UofT logo" />
+                </a>
+                <div className="inner">
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.viceprovoststudents.utoronto.ca/s">University of Toronto - Office of the Vice-Provost, Studens</a></h4>
+                  <p>
+                    Logistical and financial support($20000)
                   </p>
                 </div>
               </article>
@@ -325,38 +359,65 @@ const IndexPage = () => (
               <p>This initiative is led by the following project organizers:</p>
               <div className="box alt">
                 <div className="row gtr-50 gtr-uniform">
-                  <div className="col-4 ">
+                  <div className="col-3 ">
                     <a target="_blank" href="https://www.linkedin.com/in/adamelmasri/">
                       <h4>Adam El-Masri</h4>
                       <span className="image fit"><img src={adam} alt="" /></span>
                     </a>
                   </div>
 
-                  <div className="col-4 ">
+                  <div className="col-3 ">
                     <a target="_blank" href="https://www.linkedin.com/in/tanya-iyer-880981bb/">
                       <h4>Tanya Iyer</h4>
                       <span className="image fit"><img src={tanya} alt="" /></span>
                     </a>
                   </div>
 
-                  <div className="col-4 ">
+                  <div className="col-3 ">
                     <a target="_blank" href="https://www.linkedin.com/in/amaial-mullick-6143b3152/">
                       <h4>Amaial Mullick</h4>
                       <span className="image fit"><img src={amaial} alt="" /></span>
                     </a>
                   </div>
 
-                  <div className="col-4 ">
+                  <div className="col-3 ">
                     <a target="_blank" href="https://www.linkedin.com/in/joanna-roy-162261195/">
                       <h4>Joanna Roy</h4>
                       <span className="image fit"><img src={joanna} alt="" /></span>
                     </a>
                   </div>
 
-                  <div className="col-4 ">
+                  <div className="col-3 ">
                     <a target="_blank" href="https://www.linkedin.com/in/sonam-vashisth-206340157/">
                       <h4>Sonam Vashisth</h4>
                       <span className="image fit"><img src={sonam} alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-3 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/bridgethenry/">
+                      <h4>Bridget Henry</h4>
+                      <span className="image fit"><img src={bridget} alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-3 ">
+                    <a target="_blank" href="#">
+                      <h4>Katie Rockburn</h4>
+                      <span className="image fit"><img src={person} alt="" /></span>
+                    </a>
+                  </div>
+
+                  <div className="col-3 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/chaitanya-ahuja/">
+                      <h4>Chaitanya Ahuja</h4>
+                      <span className="image fit"><img src={chaintanya} alt="" /></span>
+                    </a>
+                  </div>
+                  <div className="col-3 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/shiqi-xu/">
+                      <h4>Shiqi Xu</h4>
+                      <span className="image fit"><img src={shiqi} alt="" /></span>
                     </a>
                   </div>
               </div>
