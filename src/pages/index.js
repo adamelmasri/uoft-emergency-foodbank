@@ -20,6 +20,7 @@ import fs from '../assets/images/fsb.png';
 import philosophy from '../assets/images/philosophy.jpg';
 import cfcc from '../assets/images/cfcc.png';
 import uoft from '../assets/images/uoft.png';
+import utgsu from '../assets/images/utgsu.jpg'
 
 
 
@@ -44,8 +45,10 @@ import { CardDeck}  from 'react-bootstrap';
 import { Alert}  from 'react-bootstrap';
 import { Button}  from 'react-bootstrap';
 
+import moment from 'moment';
 
-
+var weeksSinceStart = moment().diff(moment("2020-04-30"), 'week')
+console.log(weeksSinceStart)
 
 
 const sections = [
@@ -168,7 +171,7 @@ const IndexPage = () => (
             <article>
             <h3>Impact to Date</h3>
             <ul className="feature-icons impact-icons">
-              <li className="fa-archive"><strong>1850+ boxes and giftcards provided</strong> </li>
+              <li className="fa-archive"><strong>{weeksSinceStart * 50}+ boxes and giftcards provided</strong> </li>
               <li className="fa-users"> <strong> 425+ student households served </strong> </li>
               <li className="fa-usd"><strong>$65k+ in funds raised</strong> to tackle food insecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
@@ -256,6 +259,17 @@ const IndexPage = () => (
                   <h4><a target="_blank" rel="noreferrer nofollow" href="https://apus.ca/">Association of Part-time Undergradute Students</a></h4>
                   <p>
                     Advisory, outreach and financial support ($13000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://utgsu.ca/" className="image">
+                  <img src={utgsu} alt="UTGSU logo" />
+                </a>
+                <div className="inner">
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://utgsu.ca/">University of Toronto Graduate Student Union</a></h4>
+                  <p>
+                    Advisory, outreach and financial support ($1000)
                   </p>
                 </div>
               </article>
