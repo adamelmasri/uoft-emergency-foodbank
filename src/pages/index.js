@@ -41,6 +41,8 @@ import bridget from '../assets/images/bridget.jpeg'
 import person from '../assets/images/user.png'
 import chaintanya from '../assets/images/chaintanya.jpeg'
 import shiqi from '../assets/images/shiqi.jpeg'
+import katie from '../assets/images/katie.jpg'
+
 
 
 
@@ -82,11 +84,10 @@ function AlertDismissibleExample() {
           opens on Sundays at noon and closes by Thursday at 10am <span style={{fontWeight:"bold"}}>or when our limit is reached (typically within 24 hours)</span>. <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
           are also available depending on your area and need. 
           </p></Alert>
-          {/* <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+          <Alert variant="primary" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
-          Our initiative is commmited to serving all students (registered or otherwise) and recent alumni. Please see our section titled 'Commitment to Accessibility'
-          to learn more.
-          </p></Alert> */}
+          Interested in supporting us or working with the team? Please reach out via email!
+          </p></Alert>
       </div>
      
     );
@@ -499,7 +500,7 @@ const IndexPage = () => (
                   <div className="col-3 ">
                     <a target="_blank" href="#">
                       <h4>Katie Rockburn</h4>
-                      <span className="image fit"><img src={person} alt="" /></span>
+                      <span className="image fit"><img src={katie} alt="" /></span>
                     </a>
                   </div>
 
