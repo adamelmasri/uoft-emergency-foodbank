@@ -21,6 +21,14 @@ import philosophy from '../assets/images/philosophy.jpg';
 import cfcc from '../assets/images/cfcc.png';
 import uoft from '../assets/images/uoft.png';
 import utgsu from '../assets/images/utgsu.jpg'
+import sh from '../assets/images/shlogo.png';
+import db from '../assets/images/dblogo.jpeg';
+import ecobio from '../assets/images/ecobio.png';
+import history from '../assets/images/history.png';
+
+
+
+
 
 
 
@@ -71,14 +79,14 @@ function AlertDismissibleExample() {
       <Alert variant="primary" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
           Please note <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe"> our request form </a> 
-          opens on Sundays at noon and closes by Thursday at 10am or when our limit is reached. <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
-          are also available depending on your area and need.
+          opens on Sundays at noon and closes by Thursday at 10am <span style={{fontWeight:"bold"}}>or when our limit is reached (typically within 24 hours)</span>. <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
+          are also available depending on your area and need. 
           </p></Alert>
-          <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+          {/* <Alert variant="primary" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
           Our initiative is commmited to serving all students (registered or otherwise) and recent alumni. Please see our section titled 'Commitment to Accessibility'
           to learn more.
-          </p></Alert>
+          </p></Alert> */}
       </div>
      
     );
@@ -115,7 +123,7 @@ const IndexPage = () => (
 
             <ul className="actions fit">
                 <li><a target="_blank" rel="noreferrer nofollow" href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe" className="icon fa-user-plus button primary fit">Register for a box</a></li>
-                <li><a rel="noreferrer nofollow" href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfoodbank" className="button primary fit icon fa-dollar">Donate now</a></li>
+                <li><a rel="noreferrer nofollow" href="https://fundraise.ewb.ca/campaign/uoft-emergency-food-bank-fundraiser/c307061" className="button primary fit icon fa-dollar">Donate now</a></li>
                 <li><a target="_blank" rel="noreferrer nofollow" href="/additional-resources" className="button fit icon fa-search">See additional resources</a></li>
               </ul>
           </div>
@@ -131,8 +139,10 @@ const IndexPage = () => (
                   </a>
                   for a box of produce by providing your information no later than <b>Thursday at 10am</b>. 
                   </li>
-              <li className="fa-envelope">You'll receive an email <b>within a few days</b> confirming the details of your order.</li>
-              <li className="fas fa-leaf">Your food will arrive at your door between <b>Tuesday and Sunday of the following week.</b></li>
+              <li className="fa-envelope">You'll receive an email <b>the following Monday</b> confirming the details of your order .</li>
+              <li className="fas fa-leaf">Your food will arrive at your door between <b>Tuesday and Sunday of the following week.</b> 
+               You will receive text messages notifying you of the status of your delivery on the delivery day including the morning of, 20 minutes before it arrives,
+              and when it arrives.</li>
             </ul>
             <p>
               Every week registered and non-registered students (including recent alumni) can sign up to receive a &nbsp;
@@ -166,16 +176,16 @@ const IndexPage = () => (
                Recognizing that food insecurity is a 
               symptom of financial hardship, we are actively developing our program to deliver better services, collect and share research data,
               establish strategic partnerships with diverse stakeholders, and generate meaningful and progressive dialgoue regarding equitable access to education
-              as it pertains to the barriers created by financial hardship.
+              as it pertains to dismantling the barriers created by financial hardship.
             </p>
             <article>
             <h3>Impact to Date</h3>
             <ul className="feature-icons impact-icons">
               <li className="fa-archive"><strong>{weeksSinceStart * 50}+ boxes and giftcards provided</strong> </li>
-              <li className="fa-users"> <strong> 425+ student households served </strong> </li>
-              <li className="fa-usd"><strong>$65k+ in funds raised</strong> to tackle food insecurity</li>
+              <li className="fa-users"> <strong> 1000+ people </strong> in over <strong>600+ student households </strong> </li>
+              <li className="fa-usd"><strong>$75k+ in funds raised</strong> to tackle food inssecurity</li>
               <li className="fa-book"><a target="_blank"rel="noreferrer nofollow" href="/additional-resources">Financial aid and food resources guide developed</a></li>
-              <li className="fa-handshake-o"><strong>10+ solidarity partnerships formed</strong> with UofT and community organizations  </li>
+              <li className="fa-handshake-o"><strong>15+ solidarity partnerships formed</strong> with UofT and community organizations  </li>
             </ul>
             </article>
             
@@ -184,7 +194,7 @@ const IndexPage = () => (
               'Feeding the Student Movement' Program 
             </h3>
             <p>
-              Our team has recently launched a food honoraria program that aims to support students who participate in online programming 
+              A food honoraria program that aims to support students who participate in online programming 
               focusing on social justice and equity (e.g. workshops, panel discussions, etc.). In providing a food honoria, we are limiting a financial barrier that
               often prohibits students in need from participating in equity and social justice seeking movements. Contact us if your
               UofT group/organization/community is interested in collaborating. 
@@ -196,6 +206,24 @@ const IndexPage = () => (
               <a href="https://fb.me/e/4RoBuA8tR" target="_blank" rel="noreferrer nofollow">
              Mental Health From the Margins: A Community Consultation By and For Equity-Seeking Groups and Students
               </a> in collaboration with major UofT campus unions, college councils, professional faculty associations, and the MHPC
+            </li>
+            <li>
+              <a href="https://www.instagram.com/p/CMXpUOIBD5r/?utm_source=ig_web_copy_link" target="_blank" rel="noreferrer nofollow">
+              March Townhall for SMART: </a>tri-campus mental health updates and questions regarding campaigns, peer suppoort and consultations
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/p/CMXpUOIBD5r/?utm_source=ig_web_copy_link" target="_blank" rel="noreferrer nofollow">
+              April Meeting for SMART 
+              </a> 
+              </li>
+            <li>
+              <a href="https://www.instagram.com/p/CPTbpS2hiIH/?utm_source=ig_web_copy_link" target="_blank" rel="noreferrer nofollow">
+              May Meeting for SMART </a> </li>
+            <li>
+              <a href="https://www.instagram.com/thepearsproject/?hl=en" target="_blank" rel="noreferrer nofollow">
+              PEARS Project Event: The PEARS Project is a grassroots, trauma-informed coalition that provides support and resources to survivors of sexual violence across UofT.
+              </a>
             </li>
             </ul>
             </div>
@@ -222,7 +250,7 @@ const IndexPage = () => (
               if you'd like to support it through a partnership or sponsorship. We also accept 
 
               <strong>
-              <a target="_blank" href="https://fundraise.ewb.ca/https-fundraise-ewb_emergencyfood bank"> 
+              <a target="_blank" href="https://fundraise.ewb.ca/campaign/uoft-emergency-food-bank-fundraiser/c307061"> 
               &nbsp;financial donations. &nbsp;
               </a> 
               </strong>
@@ -248,6 +276,29 @@ const IndexPage = () => (
                 <h4><a target="_blank" rel="noreferrer nofollow" href="https://foodshare.net/">FoodShare</a></h4>
                   <p>
                     Food provider, logistical, strategic and in-kind support ($16000)
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://secondharvest.ca/" className="image">
+                  <img src={sh} alt="Second Harvest Logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://secondharvest.ca/">Second Harvest</a></h4>
+                  <p>
+                    Financial support through the Emergency Fund  ($10000)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://www.dailybread.ca/" className="image">
+                  <img src={db} alt="Daily Bread Logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.dailybread.ca/">Daily Bread</a></h4>
+                  <p>
+                   Food provider and logistical support
                   </p>
                 </div>
               </article>
@@ -278,7 +329,7 @@ const IndexPage = () => (
                   <img src={uoft} alt="UofT logo" />
                 </a>
                 <div className="inner">
-                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.viceprovoststudents.utoronto.ca/s">University of Toronto - Office of the Vice-Provost, Studens</a></h4>
+                  <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.viceprovoststudents.utoronto.ca/s">University of Toronto - Office of the Vice-Provost, Students</a></h4>
                   <p>
                     Logistical and financial support($20000)
                   </p>
@@ -332,6 +383,36 @@ const IndexPage = () => (
                 <h4><a target="_blank" rel="noreferrer nofollow" href="https://philosophy.utoronto.ca/">University of Toronto - Department of Philosophy</a></h4>
                   <p>
                     Financial Support ($500)
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a target="_blank" rel="noreferrer nofollow" href="https://eeb.utoronto.ca/" className="image">
+                  <img 
+                  src={ecobio} alt="Department of Ecology & Evolutionary Biology logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://eeb.utoronto.ca/">University of Toronto - Department of Ecology & Evolutionary Biology</a></h4>
+                  <p>
+                    Financial Support ($1000)
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <a 
+                style={{backgroundColor:"#25355A",
+              padding:10,}}
+
+                target="_blank" rel="noreferrer nofollow" href="https://www.history.utoronto.ca/" className="image">
+                  <img 
+                  src={history} alt="Department of History logo" />
+                </a>
+                <div className="inner">
+                <h4><a target="_blank" rel="noreferrer nofollow" href="https://www.history.utoronto.ca/">University of Toronto - Department of History</a></h4>
+                  <p>
+                    Financial Support ($494)
                   </p>
                 </div>
               </article>
@@ -444,8 +525,28 @@ const IndexPage = () => (
               <h2>Media</h2>
               <p>Publicity and news articles regarding this initiative.</p>
 
-              <CardDeck style={{marginBottom:"25px"}}>
+<CardDeck style={{marginBottom:"25px"}}>
 
+<Card >
+  <Card.Header>
+  <Card.Text>
+  Feeding City: COVID-19 and Campus Food Insecurity
+</Card.Text>
+  </Card.Header>
+  <Card.Img variant="top" src="https://www.utsc.utoronto.ca/projects/feedingcity/wp-content/uploads/sites/31/2021/04/MicrosoftTeams-image-1-e1619228756717.jpg" />
+  <Card.Body>
+    <Card.Text>
+    Research report documenting food insecurity on UofT campuses
+    </Card.Text>
+  </Card.Body>
+  <Card.Footer>
+    <small className="text-muted">
+      <Card.Link target="_blank" href="https://www.utsc.utoronto.ca/projects/feedingcity/2021/05/05/covid-19-and-campus-food-insecurity/">
+        Source: UTSC - Feeding The City: Pandemic & Beyond
+      </Card.Link>
+    </small>
+  </Card.Footer>
+</Card>
 <Card >
   <Card.Header>
   <Card.Text>
@@ -489,6 +590,27 @@ const IndexPage = () => (
 </CardDeck>
 
   <CardDeck>
+  <Card>
+    <Card.Header>
+    <Card.Text>
+    Meal Exchange - Catalyzing Community Food Solutions Panel
+
+  </Card.Text>
+    </Card.Header>
+    <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/5fa8521696a5fd2ab92d32e6/1621990526580-C8CQ5JZR9BRFLM5R0RMO/Food+Security+Conference-04.png?format=500w" />
+    <Card.Body>
+      <Card.Text>
+      Conference Series: Promoting Food Security in Higher Education
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">
+        <Card.Link target="_blank" href="https://www.youtube.com/watch?v=MIBoOc2uw4o&list=PLhFlhZYYgAm00X8BnYqLOWsQE8F_yMYM6&index=6&ab_channel=MealExchange">
+          Source: Meal Exchange
+        </Card.Link>
+      </small>
+    </Card.Footer>
+  </Card>
 
  
   <Card>
