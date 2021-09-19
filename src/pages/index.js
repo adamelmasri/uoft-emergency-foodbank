@@ -78,16 +78,28 @@ function AlertDismissibleExample() {
   if (show) {
     return (
       <div>
-      <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+      <Alert variant="danger" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
-          Please note <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="https://docs.google.com/forms/d/1gKakfbU5J2rJsxSrt80G6jPQA6c9nWuMa1l1AZHCDXc/edit?ts=5e8f99fe"> our request form </a> 
-          opens on Sundays at noon and closes by Thursday at 10am <span style={{fontWeight:"bold"}}>or when our limit is reached (typically within 24 hours)</span>. <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
-          are also available depending on your area and need. 
-          </p></Alert>
-          <Alert variant="primary" onClose={() => setShow(false)} dismissible>
-          <p style={{textAlign:"center", margin:"0"}}>
-          Interested in supporting us or working with the team? Please reach out via email!
-          </p></Alert>
+
+          <span style={{fontWeight:"bold"}}>Important announcement - Please Read</span>
+          <br/>
+
+          Please see the following information regarding our plan for our future operations. 
+          There will be an email coming out shortly to further explain the situation in greater detail
+          including plans on next steps and ways in which our community can be more involved
+          to support this initiative. 
+          <br/>
+          <br/>
+
+
+         <span style={{fontWeight:"bold"}}>What happened?</span>
+         <br/>
+        The UofT Emergency Food Bank has temporarily run out of funds.
+        As we await further prospective funding to arrive, this means that we are 
+        required to pause our programming for the near future (which may be a few weeks). 
+        there are various resources available that can
+        be found here: <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
+        </p></Alert>
       </div>
      
     );
