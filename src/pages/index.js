@@ -81,24 +81,21 @@ function AlertDismissibleExample() {
       <Alert variant="danger" onClose={() => setShow(false)} dismissible>
           <p style={{textAlign:"center", margin:"0"}}>
 
-          <span style={{fontWeight:"bold"}}>Important announcement - Please Read</span>
-          <br/>
-
-          Please see the following information regarding our plan for our future operations. 
-          There will be an email coming out shortly to further explain the situation in greater detail
-          including plans on next steps and ways in which our community can be more involved
-          to support this initiative. 
-          <br/>
-          <br/>
-
-
-         <span style={{fontWeight:"bold"}}>What happened?</span>
-         <br/>
         The UofT Emergency Food Bank has temporarily run out of funds.
         As we await further prospective funding to arrive, this means that we are 
         required to pause our programming for the near future (which may be a few weeks). 
         there are various resources available that can
         be found here: <a target="_blank" style={{textDecoration:"underline", color:"blue"}} href="/additional-resources"> Additional resources </a> 
+        <br/>
+    
+        <span>If you'd like to learn more about our future plans, please join our Community Town Halls!</span>
+        <br/>
+        <ul>
+          <li><a target="_blank" style={{textDecoration:"underline", color:"blue"}} href=" https://utoronto.zoom.us/meeting/register/tZUoduygqj4tEt0K9zCaz3QpQE2SckL7wC9s"> Wednesday, Sept. 29 | 9-10pm EST </a></li>
+          <li><a target="_blank" style={{textDecoration:"underline", color:"blue"}} href=" https://utoronto.zoom.us/meeting/register/tZwscuqoqzMsG9KAAsi5445oLntHvCZl82vQ"> Thursday, Sept. 30 | 9-10pm EST </a></li>
+
+        </ul>
+
         </p></Alert>
       </div>
      
